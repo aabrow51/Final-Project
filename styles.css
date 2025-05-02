@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --dk-blue: #090A46;
+    --white: #ECF0F1;
+    --lt-blue: #AED6F1;
+
+    --fonts: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+header{
+    width: 1440px;
+    min-height: 380px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dk-blue);
+    padding: 40px;
+    margin-right: 50px;
+}
+nav{
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 1em 0;
+}
+nav a{
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--dk-blue);
+}
+nav a:hover{
+    color: var(--lt-blue);
+}
+footer{
+    padding: 1rem;
+    background-color: var(--white);
+    color: var(--dk-blue);
+    text-align: center;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 1rem;
+}
+p{
+    text-align: center;
+    padding: 1rem;
+}
+main > section{
+	grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem 3rem 1rem;
+}
